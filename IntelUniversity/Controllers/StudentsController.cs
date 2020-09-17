@@ -106,7 +106,7 @@ namespace IntelUniversity.Controllers
                     return RedirectToAction(nameof(Index));
                 }
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
                 // log error
                 ModelState.AddModelError("DbUpdateException", "Unable to save changes. " + "Try again and if the problem persists " + "contact your system administrator");
@@ -150,7 +150,7 @@ namespace IntelUniversity.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
-                catch (Exception ex)
+                catch (Exception /*ex*/)
                 {
                     // log error
                     ModelState.AddModelError("DbUpdateException", "Unable to save changes. " + "Try again and if the problem persists " + "contact your system administrator");
@@ -200,7 +200,7 @@ namespace IntelUniversity.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
                 //log the error
                 return RedirectToAction(nameof(Delete),new { id = id,saveChangesError = true});
