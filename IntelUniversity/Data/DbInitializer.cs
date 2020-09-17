@@ -166,23 +166,23 @@ namespace IntelUniversity.Data
             var enrollments = new Enrollment[]
             {
                 new Enrollment {
-                    StudentID = students.Single(s => s.LastName == "Alexander").ID,
+                    StudentID = students.Single(s => s.LastName == "Dhamgunde").ID,
                     CourseID = courses.Single(c => c.Title == "Chemistry" ).CourseID,
                     Grade = Grade.A
                 },
                     new Enrollment {
-                    StudentID = students.Single(s => s.LastName == "Alexander").ID,
+                    StudentID = students.Single(s => s.LastName == "Dhamgunde").ID,
                     CourseID = courses.Single(c => c.Title == "Microeconomics" ).CourseID,
                     Grade = Grade.C
                     },
                     new Enrollment {
-                    StudentID = students.Single(s => s.LastName == "Alexander").ID,
-                    CourseID = courses.Single(c => c.Title == "Macroeconomics" ).CourseID,
+                    StudentID = students.Single(s => s.LastName == "Dhamgunde").ID,
+                    CourseID = courses.Single(c => c.Title == "Calculus" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                         StudentID = students.Single(s => s.LastName == "Alonso").ID,
-                    CourseID = courses.Single(c => c.Title == "Calculus" ).CourseID,
+                    CourseID = courses.Single(c => c.Title == "Macroeconomics" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
